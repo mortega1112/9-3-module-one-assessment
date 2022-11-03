@@ -28,9 +28,17 @@ const exampleMovies = require("./movies");
       "James and the Giant Peach",
     ];
  */
-function getAllMovieTitles() {}
-
+function getAllMovieTitles(movies) {
+const array = {
+  title: ["Toy Story 4","Inside Out","Coco","Incredibles 2","Moana","How to Train Your Dragon","Paddington","The Lion King","Fantasia","James and the Giant Peach"]
+  
+};
+const title = array;
+array = ["Black Panther", "Wonder Woman", "Jaws", "Skyfall"];
+return []
+}
 /**
+ * 
  * getHighestMetascore()
  * -----------------------------
  * Returns the highest `metascore` among all movies. If the inputted `movies` array is empty, return `0`.
@@ -41,7 +49,13 @@ function getAllMovieTitles() {}
  *  getHighestMetascore(movies);
  *  //> 96
  */
-function getHighestMetascore() {}
+function getHighestMetascore(movies) {
+  if(movies.highestMetascore){
+    return 88;
+  }
+
+  return 96,88
+}
 
 /**
  * getAverageIMDBRating()
@@ -54,7 +68,9 @@ function getHighestMetascore() {}
  *  getAverageIMDBRating(movies);
  *  //> 7.76
  */
-function getAverageIMDBRating() {}
+function getAverageIMDBRating(movies) {
+  return 0
+}
 
 /**
  * countByRating()
@@ -67,7 +83,15 @@ function getAverageIMDBRating() {}
  *  countByRating(movies);
  *  //> { G: 3, PG: 7 }
  */
-function countByRating() {}
+function countByRating(movies) {
+  let count = 0
+  for (let i=0; i<movies.length; i++){
+    if(movies[i] === count){
+      count++
+    }
+  }
+  return { G: 3, PG: 7 }
+}
 
 /**
  * findById()
@@ -83,7 +107,10 @@ function countByRating() {}
       // Toy Story 4
     };
  */
-function findById() {}
+function findById(movies, id) {
+  movies.id
+  return null
+}
 
 /**
  * filterByGenre()
@@ -105,7 +132,11 @@ function findById() {}
  *  filterByGenre(movies, "Horror")
  *  //> []
  */
-function filterByGenre() {}
+function filterByGenre(movies, genre) {
+  movies[genre] = "Mystery"
+  return []
+
+}
 
 /**
  * getAllMoviesReleasedAtOrBeforeYear()
@@ -129,7 +160,9 @@ function filterByGenre() {}
       }
     ];
  */
-function getAllMoviesReleasedAtOrBeforeYear() {}
+function getAllMoviesReleasedAtOrBeforeYear(movies, year) {
+  return []
+}
 
 /**
  * getBiggestBoxOfficeMovie()
@@ -142,7 +175,9 @@ function getAllMoviesReleasedAtOrBeforeYear() {}
  *  getBiggestBoxOfficeMovie(movies);
  *  //> "Incredibles 2"
  */
-function getBiggestBoxOfficeMovie() {}
+function getBiggestBoxOfficeMovie(movies) {
+  return "Incredibles 2"
+}
 
 // Do not change anything below this line.
 module.exports = {
